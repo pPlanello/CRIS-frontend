@@ -25,8 +25,8 @@
 			<tr>
 				<td> <a href="ResearcherServlet?id=${ri.id}"> ${ri.id} </a></td>
 				<td>${ri.name}</td>
-				<td>${ri.lastname}</td>
-				<td> <a href="${ri.scopusURL}">${ri.scopusURL}</a></td>
+				<td>${ri.lastName}</td>
+				<td> <a href="${ri.scopusURl}">${ri.scopusURl}</a></td>
 				<td>${ri.email}</td>
 			</tr>
 		</c:forEach>
