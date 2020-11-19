@@ -2,11 +2,9 @@
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Publication name: ${publication.publicationName}</title>
-</head>
+<%@ include file="Bootstrap.jsp"%>
 <body>
+	<title>Publication name: ${publication.publicationName}</title>
 	<table>
 		<tr>
 			<th>Id</th>

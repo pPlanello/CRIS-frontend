@@ -1,6 +1,6 @@
 
 <c:if test="${not (empty user)}">
-	<p>You are authenticated as ${user.id}</p>
+	<p style="background: green; color: white; text-align: center">You are authenticated as ${user.id}</p>
 	<p>
 		<a href="LogoutServlet">Logout</a>
 	</p>

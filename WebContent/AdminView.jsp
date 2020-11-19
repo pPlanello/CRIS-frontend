@@ -8,15 +8,16 @@
 <head>
 <meta charset="ISO-8859-1">
 <%@ include file="Header.jsp"%>
+<%@ include file="Bootstrap.jsp"%>
 <title>Admin</title>
 </head>
 <body>
 
 	<form action="CreateResearcherServlet" method="post">
-		<input type="text" name="id" placeholder="User Id"> <input
-			type="text" name="name" placeholder="Name"> <input
-			type="text" name="lastname" placeholder="Last name"> <input
-			type="text" name="email" placeholder="Email">
+		<input type="text" name="id" placeholder="User Id">
+		<input type="text" name="name" placeholder="Name">
+		<input type="text" name="lastname" placeholder="Last name">
+		<input type="text" name="email" placeholder="Email">
 		<button type="submit">Create researcher</button>
 	</form>
 

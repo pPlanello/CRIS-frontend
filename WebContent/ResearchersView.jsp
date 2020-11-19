@@ -7,6 +7,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<%@ include file="Bootstrap.jsp"%>
 <%@ include file="Header.jsp"%>
 <title>Researcher</title>
 </head>
@@ -15,15 +16,17 @@
 
 	<table>
 		<tr>
-			<th>Investigador</th>
+			<th>Researcher</th>
 			<th>URL</th>
 		</tr>
 		<tr>
 			<td>${ri.name}${ri.lastName}</td>
-			<td> <a href="${ri.scopusURl}">${ri.scopusURl}</a></td>
+			<td><a href="${ri.scopusURl}">${ri.scopusURl}</a></td>
 		</tr>
 	</table>
-
+	<br>
+	<br>
+	<br>
 	<table>
 		<tr>
 			<th>Publication</th>
