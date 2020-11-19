@@ -27,8 +27,7 @@ public class LoginServlet extends HttpServlet {
 	final String ADMIN = "root";
 
 	@Override
-	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
-			throws ServletException, IOException {
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		getServletContext().getRequestDispatcher("/LoginView.jsp").forward(req, resp);
 	}
 

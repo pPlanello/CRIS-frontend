@@ -28,6 +28,7 @@ public class ResearchersListServlet extends HttpServlet {
 				.request().accept(MediaType.APPLICATION_JSON).get(new GenericType<List<Researcher>>() {});
 		
 		request.setAttribute ("researcherslist", researcherslist);
+		
 		getServletContext().getRequestDispatcher("/ResearchersListView.jsp").forward(request, response);
 	}
 

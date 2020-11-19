@@ -12,13 +12,27 @@
 </head>
 
 <body>
+
+	<table>
+		<tr>
+			<th>Investigador</th>
+			<th>URL</th>
+		</tr>
+		<tr>
+			<td>${ri.name}${ri.lastName}</td>
+			<td> <a href="${ri.scopusURl}">${ri.scopusURl}</a></td>
+		</tr>
+	</table>
+
 	<table>
 		<tr>
 			<th>Publication</th>
+			<th>Name</th>
 		</tr>
 		<c:forEach items="${publications}" var="pi">
 			<tr>
-				<td> <a href="PublicationsServlet?id=${pi.id}"> ${pi.id} </a></td>
+				<td><a href="PublicationsServlet?id=${pi.id}"> ${pi.id} </a></td>
+				<td style="text-align: center">${pi.publicationName}</td>
 			</tr>
 		</c:forEach>
 	</table>
